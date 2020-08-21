@@ -1,0 +1,18 @@
+{
+    "name": "person",
+    "type": "record",
+    "namespace": "com.example",
+    "fields": [
+        {"name": "firstname", "type": "string"},
+        {"name": "lastname", "type": "string"},
+        {
+            "name": "siblings",
+            "type": {
+                "type" : "array",
+                "items" : {
+                    "name": "name", "type": "record", "fields": [{"name":"name", "type":"string"}]
+                }
+            }
+        }
+    ]
+}

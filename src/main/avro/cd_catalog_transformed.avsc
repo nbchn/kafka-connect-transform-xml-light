@@ -1,0 +1,12 @@
+{"namespace": "io.confluent.nbchn.model",
+ "type": "array",
+ "name": "simplified_catalog",
+ "items": {
+    "name": "simplified_cd",
+    "type": "record",
+    "fields": [
+        {"name": "title", "type": "string"},
+        {"name": "artist", "type": "string"}
+    ]
+ }
+}

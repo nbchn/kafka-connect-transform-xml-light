@@ -1,0 +1,22 @@
+{"namespace": "io.confluent.nbchn.model",
+ "type": "record",
+ "name": "CDCatalog",
+ "fields": [
+   {
+       "name": "catalog",
+       "type": {
+         "type": "array",
+         "items": {
+           "name": "cd",
+           "type": "record",
+           "fields": [
+             {
+               "name": "title",
+               "type": "string"
+             }
+           ]
+         }
+       }
+     }
+ ]
+}
